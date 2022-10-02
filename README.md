@@ -16,7 +16,7 @@ WrappedListComponent.defaultProps = {
 ```
 - Unique key prop is missing for List items.
 
-```
+```ruby
 <ul style={{ textAlign: 'left' }}>
       {items.map((item, index) => (
         <SingleListItem
@@ -30,7 +30,7 @@ WrappedListComponent.defaultProps = {
 ```
 - Syntax errors in the following code. ShapeOf should be shape and array should be arrayOf.
 
-```
+```ruby
  WrappedListComponent.propTypes = {
    items: PropTypes.array(
      PropTypes.shapeOf({
@@ -41,19 +41,19 @@ WrappedListComponent.defaultProps = {
 ```
 - Syntax error in useState() hook.
 
-```
+```ruby
  const [setSelectedIndex, selectedIndex] = useState(); 
 ```
 - In list item's onClick method there is a function call but onClick accepts function's reference.
 
-```
+```ruby
  <li style={{ backgroundColor: isSelected ? "green" : "red" }}
       onClick={onClickHandler(index)}>
        {text}
  </li>
 ```
 - Passing a number selectedIndex to isSelected which should be a bool
-```
+```ruby
 <ul style={{ textAlign: "left" }}>
        {items.map((item, index) => (
         <SingleListItem
@@ -66,7 +66,7 @@ WrappedListComponent.defaultProps = {
 </ul>
 ```
 **3. Please fix, optimize, and/or modify the component as much as you think is necessary.**
-```
+```ruby
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
