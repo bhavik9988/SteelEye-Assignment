@@ -148,7 +148,7 @@ WrappedListComponent.defaultProps = {
 };
 
 const List = memo(WrappedListComponent);
-  <!--- This is an HTML comment in Markdown -->
+  <font color="red">This is some text!</font>
 
 export default List;
 ```
