@@ -70,7 +70,6 @@ WrappedListComponent.defaultProps = {
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
- [//]:<>(Single List Item)
 const WrappedSingleListItem = ({
     index,
     isSelected,
@@ -80,7 +79,7 @@ const WrappedSingleListItem = ({
     return (
         <li
             style={{ backgroundColor: isSelected ? 'green' : 'red' }}
-            // onClick={onClickHandler(index)} //There should be a function reference instead of call
+            // onClick={onClickHandler(index)} 
             onClick={() => onClickHandler(index)}
         >
             {text}
@@ -97,10 +96,8 @@ WrappedSingleListItem.propTypes = {
 
 const SingleListItem = memo(WrappedSingleListItem);
 
-// List Component
 const WrappedListComponent = ({ items, }) => {
 
-    // const [setSelectedIndex, selectedIndex] = useState();the place of selectedIndex & setSelectedIndex should get interchanged.
     const [selectedIndex, setSelectedIndex] = useState();
 
     useEffect(() => {
@@ -127,14 +124,6 @@ const WrappedListComponent = ({ items, }) => {
     )
 };
 
-// WrappedListComponent.propTypes = {
-//     items: PropTypes.array(PropTypes.shapeOf({
-//         text: PropTypes.string.isRequired,
-//     })),
-// };
-
-//The above code contains some errors, The modified code is shown below
-
 WrappedListComponent.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
         text: PropTypes.string.isRequired,
@@ -143,12 +132,10 @@ WrappedListComponent.propTypes = {
 };
 
 WrappedListComponent.defaultProps = {
-    // items: null //giving null as default prop is never recommended
     items: undefined 
 };
 
 const List = memo(WrappedListComponent);
-<!--   <font color="red">This is some text!</font> -->
 
 export default List;
 ```
