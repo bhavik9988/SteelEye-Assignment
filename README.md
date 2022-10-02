@@ -7,7 +7,7 @@ is red by default.
 ```
 **2. What problems / warnings are there with code?**
 
-- Defining a default prop as null is not recommended. Either use Undefined or an array of values.
+- Defining a default prop as null is not recommended. 
 
 ```ruby
 WrappedListComponent.defaultProps = {
@@ -28,7 +28,7 @@ WrappedListComponent.defaultProps = {
       ))}
 </ul>
 ```
-- Syntax errors in the following code. ShapeOf should be shape and array should be arrayOf.
+- Syntax errors in the following code. ShapeOf would be shape and array should be arrayOf.
 
 ```ruby
  WrappedListComponent.propTypes = {
