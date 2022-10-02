@@ -47,7 +47,7 @@ const WrappedListComponent = ({
           onClickHandler={setSelectedIndex}
           text={item.text}
           index={index}
-          isSelected={selectedIndex === index}
+          isSelected={Boolean(selectedIndex)}
         />
       ))}
     </ul>
