@@ -148,7 +148,7 @@ WrappedListComponent.defaultProps = {
 };
 
 const List = memo(WrappedListComponent);
-  <font color="red">This is some text!</font>
+<!--   <font color="red">This is some text!</font> -->
 
 export default List;
 ```
