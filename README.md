@@ -66,7 +66,7 @@ WrappedListComponent.defaultProps = {
 </ul>
 ```
 **3. Please fix, optimize, and/or modify the component as much as you think is necessary.**
-```
+```ruby
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
@@ -148,7 +148,7 @@ WrappedListComponent.defaultProps = {
 };
 
 const List = memo(WrappedListComponent);
-  // This may be the most platform independent comment
+  <!--- This is an HTML comment in Markdown -->
 
 export default List;
 ```
