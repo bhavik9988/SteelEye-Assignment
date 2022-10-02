@@ -148,7 +148,7 @@ WrappedListComponent.defaultProps = {
 };
 
 const List = memo(WrappedListComponent);
-[//]: <> (This is also a comment.)
+[//]: # (This may be the most platform independent comment)
 
 export default List;
 ```
