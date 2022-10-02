@@ -13,7 +13,6 @@ is red by default.
 WrappedListComponent.defaultProps = {
   items: null,
 };
-
 ```
 - Unique key prop is missing for List items.
 
@@ -28,7 +27,6 @@ WrappedListComponent.defaultProps = {
         />
       ))}
 </ul>
-
 ```
 - Syntax errors in the following code. ShapeOf should be shape and array should be arrayOf.
 
@@ -40,13 +38,11 @@ WrappedListComponent.defaultProps = {
      })
    ),
  };
- 
 ```
 - Syntax error in useState() hook.
 
 ```
  const [setSelectedIndex, selectedIndex] = useState(); 
- 
 ```
 - In list item's onClick method there is a function call but onClick accepts function's reference.
 
@@ -55,7 +51,6 @@ WrappedListComponent.defaultProps = {
       onClick={onClickHandler(index)}>
        {text}
  </li>
- 
 ```
 
 
