@@ -9,7 +9,7 @@ is red by default.
 
 - Defining a default prop as null is not recommended. Either use Undefined or an array of values.
 
-```
+```ruby
 WrappedListComponent.defaultProps = {
   items: null,
 };
